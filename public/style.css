@@ -13,6 +13,14 @@ span {
 	margin:2px;
 }
 
+.step {
+	color: rgb(187,8,38);
+}
+
+.label1 {
+	color: rgb(0,90,171);
+}
+
 #logo {
 	border-radius: 45px;
 }

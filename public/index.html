@@ -25,22 +25,25 @@
 
 <!-- Calculator inputs -->
 
-<form>
+<form id="target">
   <div class="row">
-  	<div class="col-lg-3"></div>
+  	<div class="col-lg-2"></div>
     <div class="col-lg-2">
-      <label>Step 1: <br>Enter <br>Project Amount</label>
+      <label class="step">Step 1: <br><p class="label1">Enter <br>Project Amount</p></label>
       <input type="text" id="projectAmount" class="form-control" placeholder="$0.00">
     </div>
     <div class="col-lg-2">
-      <label>Step 2: <br>Enter Projected Monthly <br>Energy Savings</label>
+      <label class="step">Step 2: <br><p class="label1">Enter Projected Monthly <br>Energy Savings</p></label>
       <input type="text" id="monthlySavings" class="form-control" placeholder="$0">
     </div>
     <div class="col-lg-2">
-      <label>Step 3: <br>Enter Projected Annual <br>Energy Rate Increase</label>	
+      <label class="step">Step 3: <br><p class="label1">Enter Projected Annual <br>Energy Rate Increase</p></label>	
       <input type="text" id="rateIncrease" class="form-control" placeholder="0.0%">
     </div>
-    <div class="col-lg-3"></div>
+    <div class="col-lg-2">
+      <center><input type="submit" id="submit" class="btn btn-success btn-lg" value="Calculate"></center>
+    </div>	
+    <div class="col-lg-2"></div>
   </div>
 </form>
 <br><br>
@@ -118,10 +121,10 @@
 		 Promotional Period Payments:
 	</span>
 	<span class="text-center col-lg-2" id="B4">
-		$0.00
+		$ 0.00
 	</span>
 	<span class="text-center col-lg-2" id="C4">
-		=
+		-
 	</span>
 	<span class="text-center col-lg-2" id="D4">
 		N/A
@@ -139,7 +142,7 @@
 		Post Promotional Period Payments:
 	</span>
 	<span class="text-center col-lg-2" id="B5">
-		=
+		-
 	</span>
 	<span class="text-center col-lg-2" id="C5">
 		=
@@ -306,7 +309,7 @@
 
 </div>
 
-
+<script src="app.js"></script>
 </body>
 </html>
 

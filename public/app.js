@@ -1,0 +1,3 @@
+#projectAmount
+#monthlySavings
+#rateIncrease

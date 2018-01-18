@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SaveCal Affordability Program Estimation Tool</title>
+  <!-- Bootstrap File -->
+  <link rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <!-- CSS file -->  
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery.js"></script>
+</head>
+
+<body>
+<div class="container"> 
+  <div class="row">
+	<div class="jumbotron jumbotron-fluid text-center col-lg-12">
+		<img src="images/logo.jpg" alt="SaveCal" class="col-lg-4">
+		<h1>Affordability Program Estimation Tool</h1>
+	</div>
+  </div>
+</div>  		
+
+<!-- Calculator inputs -->
+
+<form>
+  <div class="row">
+  	<div class="col-lg-3"></div>
+    <div class="col-lg-2">
+      <label>Step 1: <br>Enter <br>Project Amount</label>
+      <input type="text" id="projectAmount" class="form-control" placeholder="$0.00">
+    </div>
+    <div class="col-lg-2">
+      <label>Step 2: <br>Enter Projected Monthly <br>Energy Savings</label>
+      <input type="text" id="monthlySavings" class="form-control" placeholder="$0">
+    </div>
+    <div class="col-lg-2">
+      <label>Step 3: <br>Enter Projected Annual <br>Energy Rate Increase</label>	
+      <input type="text" id="rateIncrease" class="form-control" placeholder="0.0%">
+    </div>
+    <div class="col-lg-3"></div>
+  </div>
+</form>
+
+<!-- Disclaimer -->
+
+<div class="container"> 
+  <div class="row">
+	<div class="text-center col-lg-6">
+		<h2>The Limited Time 0% & 3.99% APR Plans Only Qualify With The Sign Today, Start Tomorrow Promotion for Approved Applicants</h2>
+	</div>
+	<div class="text-center col-lg-6">
+		<div class="row">
+			<div class="text-center col-lg-12">
+				<h3>Disclaimer</h3>
+			</div>	
+		</div>
+		<div class="row">
+			<div class="text-center col-lg-12">
+				<h5>*Potential energy savings may vary depending on your personal life style, system settings, equipment maintenance, local climate, actual construction and installation. Not all home owners will qualify for the SaveCal Affordability Program. SaveCal uses third party financing.</h5>
+			</div>	
+		</div>
+		<div class="row">
+			<div class="text-center col-lg-12">
+				<h5>**Net impact is the total amount after the average energy savings have been deducted from the total financed amount, including incurred interest.</h5>
+			</div>	
+		</div>
+	</div>
+  </div>
+
+</div>
+
+
+</body>
+</html>
+
+<!--
+		<p class="alert alert-info">Guesses Left: <span id="guesses-left"></span></p>
+		<p class="alert alert-danger">Wrong Guesses: <span id="wrong-guesses"></span></p>
+		<p class="alert alert-success">Wins: <span id="win-counter"></span></p>
+		<p class="alert alert-warning">Losses: <span id="loss-counter"></span></p>
+		<h3 id="word-blank"></h3>
+	-->

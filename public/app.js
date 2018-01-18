@@ -47,8 +47,8 @@ var E10Result;
     E5Result = "$ " + ($("#projectAmount").val() * 0.0157).toFixed(2);
 
     // Row 6   
-    // $("#B5").text(B5Result);
-    // B5Result = "$ " + ($("#projectAmount").val() * 0.01666667).toFixed(2);    
+    $("#B6").text(B6Result);
+    B6Result = "$ " + ($("#monthlySavings").val() * (1 + ($("#rateIncrease").val() / 100)^(5) )).toFixed(2);    
 
     // $("#C5").text(C5Result);
     // C5Result = "$ " + ($("#projectAmount").val() * 0.0097).toFixed(2);
@@ -113,4 +113,8 @@ var E10Result;
 
 
    event.preventDefault();
+
+   $('#pageRefresh').click(function() {
+    location.reload();
+   });
   });

@@ -50,14 +50,14 @@ var E10Result;
     $("#B6").text(B6Result);
     B6Result = "$ " + ($("#monthlySavings").val() * (Math.pow(1 + ($("#rateIncrease").val() / 100), 5) )).toFixed(0);    
 
-    // $("#C5").text(C5Result);
-    // C5Result = "$ " + ($("#projectAmount").val() * 0.0097).toFixed(2);
+    $("#C6").text(C6Result);
+    C6Result = "$ " + ($("#monthlySavings").val() * (Math.pow(1 + ($("#rateIncrease").val() / 100), 12) )).toFixed(0);
 
-    // $("#D5").text(D5Result);
-    // D5Result = "$ " + ($("#projectAmount").val() * 0.01077).toFixed(2);     
+    $("#D6").text(D6Result);
+    D6Result = "$ " + ($("#monthlySavings").val() * (Math.pow(1 + ($("#rateIncrease").val() / 100), 12) )).toFixed(0);     
 
-    // $("#E5").text(E5Result);
-    // E5Result = "$ " + ($("#projectAmount").val() * 0.0157).toFixed(2); 
+    $("#E6").text(E6Result);
+    E6Result = "$ " + ($("#monthlySavings").val() * (Math.pow(1 + ($("#rateIncrease").val() / 100), 7.58333333333) )).toFixed(0); 
 
     // Row 7   
     // $("#B5").text(B5Result);

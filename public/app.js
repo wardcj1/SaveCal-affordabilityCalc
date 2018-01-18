@@ -76,8 +76,8 @@ var E10Result;
     $("#B8").text(B8Result);
     B8Result = "$ " + ((($("#projectAmount").val() * 0.01666667).toFixed(0)) * 60);    
 
-    // $("#C8").text(C8Result);
-    // C8Result = "$ " + (() * 60);
+    $("#C8").text(C8Result);
+    C8Result = "$ " + (((($("#projectAmount").val() * 0.0033).toFixed(0)) * 18) + ((($("#projectAmount").val() * 0.0097).toFixed(0)) * 126));
 
     $("#D8").text(D8Result);
     D8Result = "$ " + ((($("#projectAmount").val() * 0.01077).toFixed(0)) * 144);    
@@ -102,8 +102,8 @@ var E10Result;
     $("#B10").text(B10Result);
     B10Result = "$ " + ((((($("#projectAmount").val() * 0.01666667).toFixed(0)) - (($("#monthlySavings").val() * (Math.pow(1 + ($("#rateIncrease").val() / 100), 5) )).toFixed(0))).toFixed(0)) * 60);    
 
-    // $("#C10").text(C10Result);
-    // C10Result = "$ " + ($("#projectAmount").val() * 0.0097).toFixed(2);
+    $("#C10").text(C10Result);
+    C10Result = "$ " + ((((($("#projectAmount").val() * 0.0033).toFixed(0)) - (($("#monthlySavings").val() * (Math.pow(1 + ($("#rateIncrease").val() / 100), 12) )).toFixed(0))) * 18) + ((((($("#projectAmount").val() * 0.01077).toFixed(0)) - (($("#monthlySavings").val() * (Math.pow(1 + ($("#rateIncrease").val() / 100), 12) )).toFixed(0))).toFixed(0)) * 126));
 
     $("#D10").text(D10Result);
     D10Result = "$ " + ((((($("#projectAmount").val() * 0.01077).toFixed(0)) - (($("#monthlySavings").val() * (Math.pow(1 + ($("#rateIncrease").val() / 100), 12) )).toFixed(0))).toFixed(0)) * 144);     

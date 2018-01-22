@@ -1,30 +1,63 @@
-var C4Result = "-";
-var B5Result = "-";
-var C5Result = "-";
-var D5Result = "-";
-var E5Result = "-";
-var B6Result = "-";
-var C6Result = "-";
-var D6Result = "-";
-var E6Result = "-";
-var B7Result = "-";
-var C7Result = "-";
-var D7Result = "-";
-var E7Result = "-";
-var B8Result = "-";
-var C8Result = "-";
-var D8Result = "-";
-var E8Result = "-";
-var B9Result = "-";
-var C9Result = "-";
-var D9Result = "-";
-var E9Result = "-";
-var B10Result = "-";
-var C10Result = "-";
-var D10Result = "-";
-var E10Result = "-";
+$(document).ready(function() {
+
+var C4Result;
+var B5Result;
+var C5Result;
+var D5Result;
+var E5Result;
+var B6Result;
+var C6Result;
+var D6Result;
+var E6Result;
+var B7Result;
+var C7Result;
+var D7Result;
+var E7Result;
+var B8Result;
+var C8Result;
+var D8Result;
+var E8Result;
+var B9Result;
+var C9Result;
+var D9Result;
+var E9Result;
+var B10Result;
+var C10Result;
+var D10Result;
+var E10Result;
  
+ function initializeCalculator() {
+    var C4Result = "-";
+    var B5Result = "-";
+    var C5Result = "-";
+    var D5Result = "-";
+    var E5Result = "-";
+    var B6Result = "-";
+    var C6Result = "-";
+    var D6Result = "-";
+    var E6Result = "-";
+    var B7Result = "-";
+    var C7Result = "-";
+    var D7Result = "-";
+    var E7Result = "-";
+    var B8Result = "-";
+    var C8Result = "-";
+    var D8Result = "-";
+    var E8Result = "-";
+    var B9Result = "-";
+    var C9Result = "-";
+    var D9Result = "-";
+    var E9Result = "-";
+    var B10Result = "-";
+    var C10Result = "-";
+    var D10Result = "-";
+    var E10Result = "-";
+
+    $("#projectAmount, #monthlySavings, #rateIncrease").empty();
+ }
+
   $("#target").submit(function() {
+
 
   	// Row 4 
     $("#C4").text("$ " + C4Result);
@@ -108,10 +141,12 @@ var E10Result = "-";
     $("#E10").text("$ " + E10Result);
     E10Result = ((((($("#projectAmount").val() * 0.0157).toFixed(0)) - (($("#monthlySavings").val() * (Math.pow(1 + ($("#rateIncrease").val() / 100), 7.58333333333) )).toFixed(0))).toFixed(0)) * 96);     
 
-
-   event.preventDefault();
-
-   $('#clear').click(function() {
-    location.reload();
    });
+   // event.preventDefault();
+
+   $('#clear').on("click", function() {
+    // location.reload();
+    initializeCalculator();
+   });
+   initializeCalculator();
   });
